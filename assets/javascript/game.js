@@ -14,8 +14,8 @@
     var counter; // Count correct guesses
     var space; // Number of spaces in word ' '
     var start;
-   // var wins;
-  //  var losses; 
+    var wins;
+    var losses; 
 
     // Get elements
     var showLives = document.getElementById("mylives");
@@ -81,15 +81,15 @@
         showLives.innerHTML = "You have " + lives + " lives";
         if (lives < 1) {
             showLives.innerHTML = "Game Over";
-        		losses.innerHTML = "losses" + 1;
-      		     losses = losses + 1; 
+    //        losses.innerHTML = "losses" + 1;
+      //      losses = losses + 1; 
         }       
 
         for (var i = 0; i < guessedLetters.length; i++) {
             if (counter + space === guessedLetters.length) {
                 showLives.innerHTML = "You Win!";
-               document.getElementById("wins");
-               win = win + 1;
+//                document.getElementById("wins");
+  //              win = win + 1;
                             }
         }
     }
